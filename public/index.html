@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Chat Real Time
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body align="center">
+        <h1>
+            Chat Real Time
+        </h1>
+        <ul id="thread"></ul>
+        <form>
+            <input id="message" type="text" placeholder="message">
+            <input type="submit" value="send">
+        </form>
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    </body>
+</html>
