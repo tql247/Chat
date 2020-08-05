@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    overflow-y: auto;
+    height: 80%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #a9ffb2;
+    font-family: 'Petrona';
+    padding: 10px;
+    border-radius: 100000px;
+}
+
+.html-content {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+    max-width: 100vh;
+    height: 90vh;
+}
+
+.web-title {
+    font-family: 'Courgette';
+}
+
+#message {
+    padding: 10px;
+    border-radius: 10000px;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    padding: 10px;
+    border-radius: 10000px;
+    background-color: rgb(23, 172, 23);
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Petrona';
+    /* font-weight: bold; */
+    font-size: 13pt;
+}

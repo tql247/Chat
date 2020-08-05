@@ -4,19 +4,48 @@
             Chat Real Time
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Busmap</title>
+        <link rel="icon" type="image/png" href="assets/images/busIcon.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recursive:wght@100;200;300;400;500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans:ital@1&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Recursive:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;600&display=swap" rel="stylesheet">
+        <script src = "assets/fonts/fontawesome.js"></script>
+        <link rel="stylesheet" href="assets/css/index.css" />
     </head>
     <body align="center">
-        <h1>
-            Chat Real Time
-        </h1>
-        <ul id="thread"></ul>
-        <form>
-            <input id="message" type="text" placeholder="message">
-            <input type="submit" value="send">
-        </form>
+        
+        <div class="html-content">
+            <div class="container">
+                <h1 class="web-title">
+                    Chat Real Time
+                </h1>
+                <ul id="thread">
+
+                </ul>
+                <form style="display: flex;">
+                    <input id="message" type="text" placeholder="message">
+                    <input class="submit-btn" type="submit" value="send">
+                </form>
+            </div>
+        </div>
+
+
         <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
-        <script src="client.js"></script>
+        <script src="assets/js/client.js"></script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>
