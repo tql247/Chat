@@ -6,7 +6,7 @@ socket.on('connect', function(date){
 
 
 socket.on('thread', function(data){
-    $('#thread').append('<li>' + data + '</li> <br>');
+    $('#thread').append('<li>' + data + '</li>');
 	$("#thread").animate({ scrollTop: $(document).height() }, 1000);
 });
 
