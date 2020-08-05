@@ -1,3 +1,6 @@
+require('dotenv').config();
+const PORT = process.env.PORT || 3000
+
 var express = require("express");
 var app = express();
 
@@ -22,4 +25,4 @@ io.on('connection', function(client){
     });
 });
 
-server.listen(8000);
+server.listen(PORT);
