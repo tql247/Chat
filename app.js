@@ -15,12 +15,11 @@ app.get('/', function (req, res, ext) {
 app.use(express.static('public'));
 
 io.on('connection', function(client){
-    console.log('Client connecting...');
     client.on('join', function(data){
-        console.log(data);
+        client.broadcast.emit('newMember', data);
     });
     client.on('message', function(data){
-        client.emit('thread', data);
+        // client.emit('thread', data);
         client.broadcast.emit('thread', data);
     });
 });

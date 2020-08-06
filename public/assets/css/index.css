@@ -1,4 +1,4 @@
-ul {
+.content {
     list-style-type: none;
     overflow-y: auto;
     height: 83vh;
@@ -7,13 +7,22 @@ ul {
     margin: 0;
 }
 
-li {
-    background-color: #a9ffb2;
-    background-image: linear-gradient(90deg, #46ffd4, #d3fff7);
+.message {
     font-family: 'Petrona';
     padding: 10px;
     border-radius: 100000px;
     margin-bottom: 5px;
+}
+
+.friends {
+    background-color: #a9ffb2;
+    background-image: linear-gradient(90deg, #46ffd4, #d3fff7);
+}
+
+
+.my {
+    background-color: #46c4ff;
+    background-image: linear-gradient(90deg, #46c4ff, #9edff8);
 }
 
 .html-content {
@@ -60,6 +69,7 @@ li {
     /* font-weight: bold; */
     font-size: 13pt;
 }
+
 
 ::-webkit-scrollbar {
     width: 1px;
