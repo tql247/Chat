@@ -1,4 +1,4 @@
-var socket = io.connect('localhost:8000');
+var socket = io.connect('https://chatrealtimevn.herokuapp.com/');
 
 socket.on('connect', function(date){
     socket.emit('join','A new join');
