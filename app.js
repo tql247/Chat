@@ -22,6 +22,11 @@ io.on('connection', function(client){
         // client.emit('thread', data);
         client.broadcast.emit('thread', data);
     });
+
+    client.on('disconnect', function(reason) {
+        console.log(reason);
+        client.broadcast.emit('leave');
+    });
 });
 
 server.listen(PORT);
