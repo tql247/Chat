@@ -22,7 +22,7 @@ $('form').submit(function(){
 
     
     $('#thread').append('<div class="message my">' + message + '</div>');
-	$("#thread").animate({ scrollTop: $(document).height() }, 1000);
+	$("#thread").animate({ scrollTop: $("#thread").height() + 1000}, 1000);
 
     return false;
 })
